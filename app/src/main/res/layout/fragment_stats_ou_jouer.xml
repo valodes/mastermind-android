@@ -87,11 +87,9 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="right"
                     android:text="@string/jouer_partie"
-                    android:backgroundTint="@color/md_theme_secondaryContainer"
-                    android:textColor="@color/md_theme_onSecondaryContainer"
+                    style="@style/Widget.App.Button"
                     android:textSize="12sp"
                     android:textAllCaps="true"
-                    style="@style/Widget.Material3.Button.ElevatedButton"
                     />
             </LinearLayout>
         </LinearLayout>
@@ -151,9 +149,7 @@
                     android:textSize="12sp"
                     android:layout_gravity="right"
                     android:textAllCaps="true"
-                    android:backgroundTint="@color/md_theme_secondaryContainer"
-                    android:textColor="@color/md_theme_onSecondaryContainer"
-                    style="@style/Widget.Material3.Button.ElevatedButton"
+                    style="@style/Widget.App.Button"
                     />
             </LinearLayout>
         </LinearLayout>

@@ -126,11 +126,9 @@
 
                 <Button
                     android:id="@+id/jouer"
-                    style="@style/Widget.Material3.Button.ElevatedButton"
+                    style="@style/Widget.App.Button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:backgroundTint="@color/md_theme_secondaryContainer"
-                    android:textColor="@color/md_theme_onSecondaryContainer"
                     android:textSize="16sp"
                     android:layout_gravity="right"
                     android:textAllCaps="true"

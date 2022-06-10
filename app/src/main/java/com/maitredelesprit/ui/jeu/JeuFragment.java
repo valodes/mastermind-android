@@ -1,6 +1,7 @@
 package com.maitredelesprit.ui.jeu;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -49,7 +50,8 @@ public class JeuFragment extends Fragment {
     private int toutesLesLignes, toutesLesColonnes; // nombre de lignes et de colonnes de la grille de jeu
 
     private static String key = null, pseudo = null; //Pour la sauvegarde de la partie en cours (si on veut la reprendre)
-    private static long perdu = 0, gagne = 0, ratio = 0; //Pour la sauvegarde de la partie (pour le score)
+    private static long perdu = 0, gagne = 0; //Pour la sauvegarde de la partie (pour le score)
+    private static float ratio = 0;
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater,ViewGroup container, Bundle savedInstanceState) {
@@ -192,10 +194,8 @@ public class JeuFragment extends Fragment {
                 Boules boule = partie.getBoule(ligne, colonne); // Récupère la boule de la ligne et de la colonne en cours de traitement
                 int couleur = ContextCompat.getColor(getContext(), R.color.md_theme_secondary); // Récupère la couleur de la boule en cours de traitement
 
-                if(ligne == 0) { // Si c'est la première ligne
-                    if(partie.getEtat() == Etats.EN_COURS) { // Si le jeu n'est pas terminé
-                        couleur = ContextCompat.getColor(getContext(), R.color.md_theme_secondary); // Couleur de la boule en cours de traitement (grisée)
-                    } else { // Si le jeu est terminé
+                if (ligne == 0) { // Si c'est la première ligne
+                    if (partie.getEtat() != Etats.EN_COURS) {
                         couleur = ContextCompat.getColor(getContext(), boule.getCouleur().getCouleur()); // Couleur de la boule en cours de traitement (couleur de la boule)
                     }
                 } else if (boule != null) { // Si la boule n'est pas null (si la ligne n'est pas la première)
@@ -205,9 +205,11 @@ public class JeuFragment extends Fragment {
                 BoutonBoules boutonBoule = new BoutonBoules(getContext(), couleur); // Bouton Boule (ligne, colonne) (couleur)
                 ligneTable.addView(boutonBoule); // Ajoute le bouton à la ligne en cours de traitement
 
-                if(ligne == 0) {
+                if (ligne == 0 && partie.getEtat() == Etats.EN_COURS) {
                     boutonBoule.setTextColor(ContextCompat.getColor(getContext(), R.color.md_theme_onSecondary)); // Couleur du texte de la boule en cours de traitement (grisée)
                     boutonBoule.setText("?"); // Texte de la boule en cours de traitement (?)
+                } else if (ligne == 0 && partie.getEtat() != Etats.EN_COURS) {
+                    boutonBoule.setText(" ");
                 }
 
                 final int LIGNE_POSITION = ligne, COLONNE_POSITION = colonne; // Position de la ligne et de la colonne en cours de traitement

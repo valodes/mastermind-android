@@ -50,4 +50,24 @@
     <style name="Theme.Maitredelesprit.AppBarOverlay" parent="ThemeOverlay.AppCompat.DayNight.ActionBar" />
 
     <style name="Theme.Maitredelesprit.PopupOverlay" parent="ThemeOverlay.AppCompat.DayNight" />
+
+    <style name="Widget.App.Button" parent="Widget.MaterialComponents.Button">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.Button</item>
+    </style>
+
+    <style name="ThemeOverlay.App.Button" parent="">
+        <item name="colorPrimary">@color/md_theme_secondaryContainer</item>
+        <item name="colorOnPrimary">@color/md_theme_onSecondaryContainer</item>
+    </style>
+
+    <style name="Widget.App.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.TextInputLayout</item>
+        <item name="hintTextColor">?attr/colorOnSurface</item>
+    </style>
+
+    <style name="ThemeOverlay.App.TextInputLayout" parent="">
+        <item name="colorPrimary">@color/md_theme_secondary</item>
+        <item name="colorOnSurface">@color/md_theme_secondary</item>
+        <item name="colorError">@color/md_theme_error</item>
+    </style>
 </resources>

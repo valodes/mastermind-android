@@ -13,27 +13,31 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:contentDescription="@string/nav_header_desc"
-        android:paddingTop="@dimen/nav_header_vertical_spacing"
-        app:srcCompat="@mipmap/ic_launcher_round" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="24dp"
-        android:textAppearance="?attr/textAppearanceHeadlineSmall"
-        android:textColor="?attr/colorOnSurface"
-        android:text="@string/nav_header_title" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
         android:layout_marginBottom="24dp"
         android:layout_marginEnd="24dp"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/image_maitre_de_l_esprit" />
+
+    <TextView
+        android:id="@+id/nav_header_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineHeight="50dp"
+        android:text="@string/nav_header_title"
+        android:textAllCaps="true"
+        android:textAppearance="?attr/textAppearanceTitleLarge"
+        android:textColor="@color/md_theme_primary"
+        android:textSize="25sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineHeight="50dp"
+        android:textAllCaps="true"
         android:textAppearance="?attr/textAppearanceTitleSmall"
-        android:textColor="?attr/colorOnSurfaceVariant"
-        android:text="@string/nav_header_subtitle" />
+        android:textColor="@color/md_theme_secondary"
+        android:text="@string/nav_header_subtitle"
+        android:textSize="12sp" />
 </LinearLayout>

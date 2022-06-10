@@ -64,7 +64,10 @@ public class AccueilFragment extends Fragment {
             public void onClick(View view) {
                 Bundle bundle = new Bundle();
                 String pseudo = editTextPseudo.getText().toString();
+                pseudo = pseudo.replaceAll("\\n", "");
+                pseudo = pseudo.replaceAll("\\r", "");
                 String pseusoChange = pseudo.substring(0, 1).toUpperCase() + pseudo.substring(1).toLowerCase();
+
                 bundle.putString("pseudo", pseusoChange);
 
                 NavHostFragment.findNavController(AccueilFragment.this).navigate(R.id.nav_choix, bundle);

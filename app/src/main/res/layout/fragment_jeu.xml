@@ -5,53 +5,100 @@
     android:layout_height="match_parent"
     tools:context=".ui.jeu.JeuFragment">
 
-    <TextView
-        android:id="@+id/pseudo"
+    <RelativeLayout
+        android:id="@+id/layout_pseudo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="5dp"
-        android:ems="15"
+        android:layout_margin="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/pseudo_text"
+            android:textAllCaps="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/connecter"
+            android:textSize="16sp"
+            android:textAppearance="?attr/textAppearanceTitleMedium"
+            />
+
+        <TextView
+            android:id="@+id/pseudo"
+            android:textAllCaps="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pseudo"
+            android:layout_alignParentRight="true"
+            android:textSize="16sp"
+            android:textAppearance="?attr/textAppearanceTitleMedium"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_pseudo"
+        android:layout_marginTop="15dp"
         android:gravity="center"
-        android:minHeight="48dp"
-        android:text=""
+        android:textColor="@color/md_theme_secondary"
+        android:text="@string/message_jeu"
+        android:textAppearance="?attr/textAppearanceTitleMedium"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView_sous_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_message"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/sous_message_jeu"
+        android:textAppearance="?attr/textAppearanceBodyMedium"
         android:textSize="14sp" />
 
-    <TableLayout
-        android:id="@+id/tableau_jeu"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_below="@+id/textView_sous_message"
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/pseudo"
-        android:layout_centerHorizontal="true"
-        android:layout_marginLeft="0dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginRight="2dp"
-        android:layout_marginBottom="8dp" />
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
 
-    <RelativeLayout
-        android:id="@+id/boutons"
-        android:layout_below="@+id/tableau_jeu"
-        android:layout_width="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_height="wrap_content" >
-
-        <Button
-            android:id="@+id/bouton_rejouer"
+        <TableLayout
+            android:id="@+id/tableau_jeu"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:enabled="false"
-            android:text="@string/rejouer_partie" />
+            android:layout_height="wrap_content" />
 
-        <Button
-            android:id="@+id/bouton_valider"
+        <RelativeLayout
+            android:id="@+id/boutons"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:layout_toRightOf="@id/bouton_rejouer"
-            android:text="@string/valider_jeu" />
-    </RelativeLayout>
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/bouton_rejouer"
+                style="@style/Widget.App.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:text="@string/rejouer_partie"
+                android:textAllCaps="true"
+                android:layout_margin="15dp"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/bouton_valider"
+                style="@style/Widget.App.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/bouton_rejouer"
+                android:text="@string/valider_jeu"
+                android:layout_margin="15dp"
+                android:textAllCaps="true"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
 
 </RelativeLayout>
