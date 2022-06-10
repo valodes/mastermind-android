@@ -52,4 +52,13 @@
     <string name="jouer_texte">Tu souhaites jouer à un jeu trop méga génial qui demande de la réflexion, de la chance et beaucoup de skills ? Alors joue toute suite à notre Mastermind !!!</string>
     <string name="jouer_statistiques">Tu souhaites te comparer avec les meilleurs ou juste être curieux de ton ratio de victoires ? Va vite sur tes statistiques et tu verras la vie en rose !!!</string>
     <string name="connecter">Connecté en tant que ...</string>
+
+    <string name="action_regles">Règles</string>
+
+    <string name="title">Règles</string>
+    <string name="supporting_text">Le but du Mastermind ?\n\nUne combinaison de 4 couleurs a été créé, à vous de la trouver ! Vous avez un maximum de 8 coups pour la trouver, sinon c\'est perdu !\n\nComment jouer ?\n\nUne ligne est composée de 4 pions. Il y a 6 couleurs possibles pour chaque pion, chaque clique sur un bouton change sa couleur. Il suffit de trouver la combinaison secrète pour gagner la partie !\n\nLes règles ?\n\nIl est interdit de mettre deux fois la même couleur sur la même ligne.</string>
+
+    <string name="message_jeu">Et c\'est parti ! Bon jeu !</string>
+    <string name="sous_message_jeu">N\'hésites pas à consulter les règles pour comprendre le jeu. Pour y accéder, cliques sur le logo à droite de l\'écran.</string>
+    <string name="accept">Ok</string>
 </resources>

@@ -15,7 +15,7 @@ public class Stats {
     private String pseudo;
     private long perdu; // Nombre de parties perdues
     private long gagne; // Nombre de parties gagnées
-    private long ratio; // Ratio de victoire
+    private double ratio; // Ratio de victoire
 
     /**
      * Constructeur par défaut de la classe.
@@ -37,7 +37,7 @@ public class Stats {
      * @version 1.0
      * @author Valentin HUARD et Maud LEFORT
      */
-    public Stats(String pseudo, long gagne, long perdu, long ratio) {
+    public Stats(String pseudo, long gagne, long perdu, double ratio) {
         this.pseudo = pseudo;
         this.perdu = perdu;
         this.gagne = gagne;
@@ -106,7 +106,7 @@ public class Stats {
      * @version 1.0
      * @author Valentin HUARD et Maud LEFORT
      */
-    public long getRatio() {
+    public double getRatio() {
         return ratio;
     }
 }

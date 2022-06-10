@@ -68,6 +68,26 @@ public class Partie extends Grille {
         }
     }
 
+    public boolean ligneEstRemplie() {
+        for(int col = 0; col < nbColonnes; col++) {
+            if(boules[ligneCourante][col] == null) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public boolean ligneEstValide() {
+        for(int col = 0; col < nbColonnes; col++) {
+            for(int col1 = 0; col1 < nbColonnes; col1++) {
+                if (boules[ligneCourante][col].getCouleur() == boules[ligneCourante][col1].getCouleur() && col != col1) {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+
     public void rejouer() {
         etat = Etats.EN_COURS;
         ligneCourante = nbLignes - 1;

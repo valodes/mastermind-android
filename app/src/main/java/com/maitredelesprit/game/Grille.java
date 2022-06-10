@@ -51,26 +51,6 @@ public class Grille
         return unique;
     }
 
-    public boolean ligneEstRemplie() {
-        for(int col = 0; col < nbColonnes; col++) {
-            if(boules[ligneCourante][col] == null) {
-                return false;
-            }
-        }
-        return true;
-    }
-
-    public boolean ligneEstValide() {
-        for(int col = 0; col < nbColonnes; col++) {
-            for(int col1 = 0; col1 < nbColonnes; col1++) {
-                if (boules[ligneCourante][col].getCouleur() == boules[ligneCourante][col1].getCouleur() && col != col1) {
-                    return false;
-                }
-            }
-        }
-        return true;
-    }
-
     public int getLigneCourante() {
         return ligneCourante;
     }

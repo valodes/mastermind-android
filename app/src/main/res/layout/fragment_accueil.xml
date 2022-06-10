@@ -63,10 +63,16 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/textView_sous_message"
             android:hint="Votre pseudo"
+            app:boxStrokeColor="@color/md_theme_primary"
+            app:hintTextColor="@color/md_theme_primary"
             app:startIconDrawable="@drawable/ic_baseline_account_box_24">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/editText_pseudo"
+                style="@style/Widget.App.TextInputLayout"
+                android:maxLines="1"
+                android:inputType="textPersonName"
+                android:autofillHints="username"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
@@ -75,7 +81,7 @@
 
         <Button
             android:id="@+id/bouton_se_connecter"
-            style="@style/Widget.Material3.Button.ElevatedButton"
+            style="@style/Widget.App.Button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/field_pseudo"
@@ -84,10 +90,7 @@
             android:layout_centerHorizontal="true"
             android:layout_gravity="right"
             android:layout_margin="16dp"
-            android:backgroundTint="@color/md_theme_secondaryContainer"
-            android:textColor="@color/md_theme_onSecondaryContainer"
             android:enabled="false"
             android:text="@string/se_connecter" />
-
     </RelativeLayout>
 </RelativeLayout>
