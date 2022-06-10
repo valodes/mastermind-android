@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
     <color name="or">#fbbc39</color>
+    <color name="argent">#C0C0C0</color>
+    <color name="bronze">#614e1a</color>
 
     <color name="rouge">#a93443</color>
     <color name="bleu">#2c3eff</color>

@@ -40,7 +40,7 @@
     <string name="gagne">"Partie(s) gagnée(s) : "</string>
     <string name="trait">" - "</string>
     <string name="perdu">"Partie(s) perdue(s) : "</string>
-    <string name="ratio">"Ratio : "</string>
+    <string name="ratio">"Ratio de victoires : "</string>
 
     <string name="valentin_huard">Valentin HUARD</string>
     <string name="texte_valentin_huard">Développeur web en formation chez MDS Toulouse. Jouer à notre mastermind et n\'hésitez pas à nous donner notre avis 😜</string>
@@ -61,4 +61,7 @@
     <string name="message_jeu">Et c\'est parti ! Bon jeu !</string>
     <string name="sous_message_jeu">N\'hésites pas à consulter les règles pour comprendre le jeu. Pour y accéder, cliques sur le logo à droite de l\'écran.</string>
     <string name="accept">Ok</string>
+    <string name="pourcentage">%</string>
+    <string name="message_stats">Classement</string>
+    <string name="sous_message_stats">Bienvenue dans le classement des joueurs !\n\nTu trouves la liste des joueurs présents trié par leur ratio de victoire ! Si toi aussi tu veux être dans les premiers, augmente ton ratio en jouant !</string>
 </resources>

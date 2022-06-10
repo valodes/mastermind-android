@@ -6,45 +6,35 @@
     android:layout_height="match_parent"
     tools:context=".ui.stats.StatsFragment">
 
-    <RelativeLayout
-        android:id="@+id/leaderboard"
+    <TextView
+        android:id="@+id/textView_message"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:textColor="@color/md_theme_secondary"
+        android:text="@string/message_stats"
+        android:textAppearance="?attr/textAppearanceTitleMedium"
+        android:textSize="16sp" />
 
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_centerInParent="true"
-            app:tint="@color/or"
-            android:src="@drawable/ic_sharp_auto_awesome_24" />
-
-        <ImageView
-            android:id="@+id/imageView3"
-            android:cropToPadding="false"
-            android:paddingTop="65dp"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            app:tint="@color/or"
-            android:src="@drawable/ic_sharp_auto_awesome_24" />
-
-        <ImageView
-            android:id="@+id/place_trois_image"
-            android:layout_alignParentRight="true"
-            android:paddingTop="65dp"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            app:tint="@color/or"
-            android:src="@drawable/ic_sharp_auto_awesome_24"
-            />
-    </RelativeLayout>
+    <TextView
+        android:id="@+id/textView_sous_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_message"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
+        android:ems="15"
+        android:gravity="center"
+        android:text="@string/sous_message_stats"
+        android:textAppearance="?attr/textAppearanceBodyMedium"
+        android:textSize="14sp" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/liste_stats"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/leaderboard" />
+        android:layout_below="@+id/textView_sous_message" />
 
     <ProgressBar
         android:id="@+id/idProgressBar"
