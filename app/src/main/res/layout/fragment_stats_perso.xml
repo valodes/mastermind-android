@@ -63,10 +63,21 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
-                        android:text="Ratio"
                         android:layout_toRightOf="@id/ratio_text"
+                        android:text="Ratio"
                         android:textAppearance="?attr/textAppearanceBodyMedium"
-                        android:textColor="?android:attr/textColorSecondary"
+                        android:textColor="@color/md_theme_primary"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/ratio_pourcentage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_toRightOf="@id/ratio"
+                        android:text="@string/pourcentage"
+                        android:textAppearance="?attr/textAppearanceBodyMedium"
+                        android:textColor="@color/md_theme_primary"
                         android:textSize="16sp" />
                 </RelativeLayout>
 
