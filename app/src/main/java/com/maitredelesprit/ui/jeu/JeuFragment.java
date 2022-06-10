@@ -1,7 +1,6 @@
 package com.maitredelesprit.ui.jeu;
 
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -51,7 +50,7 @@ public class JeuFragment extends Fragment {
 
     private static String key = null, pseudo = null; //Pour la sauvegarde de la partie en cours (si on veut la reprendre)
     private static long perdu = 0, gagne = 0; //Pour la sauvegarde de la partie (pour le score)
-    private static float ratio = 0;
+    private static long ratio = 0; //Pour la sauvegarde de la partie (pour le ratio)
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater,ViewGroup container, Bundle savedInstanceState) {
@@ -147,7 +146,13 @@ public class JeuFragment extends Fragment {
      * @return void
      */
     public void finirJeu() {
-        ratio = gagne / (gagne + perdu);
+        //calcul du ratio en pourcentage (gagne/perdu)
+        if(perdu == 0) {
+            ratio = 100;
+        } else {
+            ratio = (gagne * 100) / (gagne + perdu);
+        }
+
         donneeVersFirebase();
         binding.boutonValider.setEnabled(false);
         binding.boutonRejouer.setEnabled(true);
@@ -253,6 +258,7 @@ public class JeuFragment extends Fragment {
                         gagne = (long) singleSnapshot.child("gagne").getValue();
                         perdu = (long) singleSnapshot.child("perdu").getValue();
                         ratio = (long) singleSnapshot.child("ratio").getValue();
+
                         key = singleSnapshot.getKey();
                     }
                 }

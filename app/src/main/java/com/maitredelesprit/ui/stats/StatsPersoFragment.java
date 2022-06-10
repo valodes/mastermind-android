@@ -22,11 +22,16 @@ import com.maitredelesprit.database.Stats;
 import com.maitredelesprit.databinding.FragmentStatsPersoBinding;
 import com.maitredelesprit.ui.jeu.StatsOuJouerFragment;
 
-
+/**
+ * Fragment des statistiques personnelles de l'utilisateur (nombre de parties gagnées, etc.)
+ *
+ * @version 1.0
+ * @author Valentin HUARD et Maud LEFORT
+ */
 public class StatsPersoFragment extends Fragment {
 
-    private FragmentStatsPersoBinding binding;
-    private FirebaseDatabase db;
+    private FragmentStatsPersoBinding binding; //Binding de la vue du fragment (fragment_stats_perso.xml)
+    private FirebaseDatabase db; //Base de données Firebase (FirebaseDatabase)
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -41,6 +46,8 @@ public class StatsPersoFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         String pseudo = getArguments().getString("pseudo");
+        binding.pseudo.setText(pseudo);
+
         db = FirebaseDatabase.getInstance();
 
         db.getReference("statistiques").orderByChild("ratio").addValueEventListener(new ValueEventListener() {
@@ -49,7 +56,6 @@ public class StatsPersoFragment extends Fragment {
                 for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
                     if(snapshot.child("pseudo").getValue().equals(pseudo)) {
                         Stats stats = snapshot.getValue(Stats.class);
-                        binding.pseudo.setText(pseudo);
                         binding.ratio.setText(String.valueOf(stats.getRatio()));
                         binding.gagne.setText(String.valueOf(stats.getGagne()));
                         binding.perdu.setText(String.valueOf(stats.getPerdu()));
@@ -60,15 +66,6 @@ public class StatsPersoFragment extends Fragment {
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
                 Toast.makeText(getContext(), "Erreur lors de la récupération des statistiques", Toast.LENGTH_LONG).show();
-            }
-        });
-
-        binding.jouer.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Bundle bundle = new Bundle();
-                bundle.putString("pseudo", pseudo);
-                NavHostFragment.findNavController(StatsPersoFragment.this).navigate(R.id.nav_jeu, bundle);
             }
         });
     }

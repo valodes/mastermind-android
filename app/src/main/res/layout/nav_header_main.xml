@@ -14,11 +14,11 @@
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="150dp"
-        android:layout_marginBottom="24dp"
-        android:layout_marginEnd="24dp"
         android:layout_height="150dp"
         android:scaleType="centerCrop"
-        app:srcCompat="@drawable/image_maitre_de_l_esprit" />
+        android:layout_gravity="center"
+        android:layout_margin="25dp"
+        app:srcCompat="@drawable/logo_mastermind" />
 
     <TextView
         android:id="@+id/nav_header_title"

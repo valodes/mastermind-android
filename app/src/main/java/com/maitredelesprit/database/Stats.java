@@ -30,8 +30,8 @@ public class Stats {
      * Constructeur de la classe Stats qui initialise les statistiques du jeu.
      *
      * @param pseudo Pseudo du joueur. (non-null)
-     * @param perdu Nombre de parties perdues. (non-null)
      * @param gagne Nombre de parties gagnées. (non-null)
+     * @param perdu Nombre de parties perdues. (non-null)
      * @param ratio Ratio de victoire. (non-null)
      *
      * @version 1.0

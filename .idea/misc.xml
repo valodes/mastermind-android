@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Bureau/MDS/ANDROID/maitredelesprit/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.345" />
         <entry key="..\:/Bureau/MDS/ANDROID/maitredelesprit/app/src/main/res/drawable/circle.xml" value="0.2985" />
+        <entry key="..\:/Bureau/MDS/ANDROID/maitredelesprit/app/src/main/res/drawable/ic_launcher_background.xml" value="0.345" />
         <entry key="..\:/Bureau/MDS/ANDROID/maitredelesprit/app/src/main/res/drawable/ic_menu_camera.xml" value="0.1935" />
         <entry key="..\:/Bureau/MDS/ANDROID/maitredelesprit/app/src/main/res/drawable/ic_menu_stats.xml" value="0.1935" />
         <entry key="..\:/Bureau/MDS/ANDROID/maitredelesprit/app/src/main/res/drawable/img.xml" value="0.2985" />

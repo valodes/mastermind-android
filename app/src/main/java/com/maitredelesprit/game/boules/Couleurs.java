@@ -21,12 +21,13 @@ public enum Couleurs {
 
     private int couleur;
 
+    /**
+     * Constructeur de l'énumération.
+     *
+     * @param couleur La couleur de la boule.
+     */
     Couleurs(int couleur) {
         this.couleur = couleur;
-    }
-
-    public int getCouleur() {
-        return couleur;
     }
 
     /**
@@ -39,6 +40,13 @@ public enum Couleurs {
         return Couleurs.values()[random];
     }
 
+    /**
+     * Permet de connaître la prochaine couleur de la boule.
+     *
+     * @param boule La boule dont on veut connaître la prochaine couleur. (non-null)
+     *
+     * @return La prochaine couleur de la boule.
+     */
     public static Couleurs getNextCouleur(Boules boule) {
         Couleurs valeur = null;
 
@@ -49,5 +57,14 @@ public enum Couleurs {
         }
 
         return valeur;
+    }
+
+    /**
+     * Retourne la couleur de la boule.
+     *
+     * @return La couleur de la boule.
+     */
+    public int getCouleur() {
+        return couleur;
     }
 }
