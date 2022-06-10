@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Bureau/MDS/ANDROID/maitredelesprit/app/src/main/res/drawable/circle.xml" value="0.2985" />
+        <entry key="..\:/Bureau/MDS/ANDROID/maitredelesprit/app/src/main/res/drawable/ic_menu_camera.xml" value="0.1935" />
+        <entry key="..\:/Bureau/MDS/ANDROID/maitredelesprit/app/src/main/res/drawable/ic_menu_stats.xml" value="0.1935" />
+        <entry key="..\:/Bureau/MDS/ANDROID/maitredelesprit/app/src/main/res/drawable/img.xml" value="0.2985" />
+        <entry key="..\:/Bureau/MDS/ANDROID/maitredelesprit/app/src/main/res/drawable/side_nav_bar.xml" value="0.1935" />
+        <entry key="..\:/Bureau/MDS/ANDROID/maitredelesprit/app/src/main/res/layout/activity_main.xml" value="0.358695652173913" />
+        <entry key="..\:/Bureau/MDS/ANDROID/maitredelesprit/app/src/main/res/layout/app_bar_main.xml" value="0.358695652173913" />
+        <entry key="..\:/Bureau/MDS/ANDROID/maitredelesprit/app/src/main/res/layout/content_main.xml" value="0.358695652173913" />
+        <entry key="..\:/Bureau/MDS/ANDROID/maitredelesprit/app/src/main/res/layout/fragment_accueil.xml" value="0.25555555555555554" />
+        <entry key="..\:/Bureau/MDS/ANDROID/maitredelesprit/app/src/main/res/layout/fragment_credits.xml" value="0.24731182795698925" />
+        <entry key="..\:/Bureau/MDS/ANDROID/maitredelesprit/app/src/main/res/layout/fragment_jeu.xml" value="0.358695652173913" />
+        <entry key="..\:/Bureau/MDS/ANDROID/maitredelesprit/app/src/main/res/layout/fragment_stats.xml" value="0.358695652173913" />
+        <entry key="..\:/Bureau/MDS/ANDROID/maitredelesprit/app/src/main/res/layout/fragment_stats_ou_jouer.xml" value="0.5" />
+        <entry key="..\:/Bureau/MDS/ANDROID/maitredelesprit/app/src/main/res/layout/fragment_stats_perso.xml" value="0.25" />
+        <entry key="..\:/Bureau/MDS/ANDROID/maitredelesprit/app/src/main/res/layout/item_stats.xml" value="0.18541666666666667" />
+        <entry key="..\:/Bureau/MDS/ANDROID/maitredelesprit/app/src/main/res/layout/nav_header_main.xml" value="0.2804878048780488" />
+        <entry key="..\:/Bureau/MDS/ANDROID/maitredelesprit/app/src/main/res/menu/activity_main_drawer.xml" value="0.3625" />
+        <entry key="..\:/Bureau/MDS/ANDROID/maitredelesprit/app/src/main/res/menu/main.xml" value="0.3625" />
+        <entry key="..\:/Bureau/MDS/ANDROID/maitredelesprit/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2985" />
+        <entry key="..\:/Bureau/MDS/ANDROID/maitredelesprit/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.2985" />
+      </map>
+    </option>
+  </component>
+  <component name="JavadocGenerationManager">
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/../../../../Downloads" />
+    <option name="OPTION_DOCUMENT_TAG_USE" value="true" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

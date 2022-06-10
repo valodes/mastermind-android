@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_accueil">
+
+    <fragment
+        android:id="@+id/nav_accueil"
+        android:name="com.maitredelesprit.ui.accueil.AccueilFragment"
+        android:label="@string/menu_accueil"
+        tools:layout="@layout/fragment_accueil" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_stats"
+        android:name="com.maitredelesprit.ui.stats.StatsFragment"
+        android:label="@string/menu_stats"
+        tools:layout="@layout/fragment_stats" />
+
+    <fragment
+        android:id="@+id/nav_credits"
+        android:name="com.maitredelesprit.ui.credits.CreditsFragment"
+        android:label="@string/menu_credits"
+        tools:layout="@layout/fragment_credits" />
+
+    <fragment
+        android:id="@+id/nav_choix"
+        android:name="com.maitredelesprit.ui.jeu.StatsOuJouerFragment"
+        android:label="@string/menu_choix"
+        tools:layout="@layout/fragment_stats_ou_jouer" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_stats_perso"
+        android:name="com.maitredelesprit.ui.stats.StatsPersoFragment"
+        android:label="@string/menu_statistique_personnelle"
+        tools:layout="@layout/fragment_stats_perso" />
+
+    <fragment
+        android:id="@+id/nav_jeu"
+        android:name="com.maitredelesprit.ui.jeu.JeuFragment"
+        android:label="@string/menu_jeu"
+        tools:layout="@layout/fragment_jeu" />
+</navigation>

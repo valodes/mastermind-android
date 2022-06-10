@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="rayon_boule">120</integer>
+    <integer name="marge_boule">5</integer>
+    <integer name="largeur_aide">250</integer>
+    <integer name="hauteur_aide">140</integer>
+    <integer name="marge_aide">5</integer>
+</resources>

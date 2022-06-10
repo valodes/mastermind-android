@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Le Maître de l\'Esprit</string>
+    <string name="nav_header_title">Le Maître de l\'Esprit</string>
+    <string name="nav_header_subtitle">LEFORT Maud et HUARD Valentin</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="menu_accueil">Accueil</string>
+    <string name="menu_stats">Statistiques</string>
+    <string name="menu_credits">Crédits</string>
+    <string name="menu_choix">Bienvenue !</string>
+    <string name="menu_jeu">Maître de l\'Esprit</string>
+    <string name="menu_statistique_personnelle">Statistiques Personnelles</string>
+
+    <string name="sous_titre_jeu">Jeu et statistiques</string>
+    <string name="sous_titre_credits">Crédits du jeu</string>
+
+    <string name="bonne_couleur">%s bonnes(s) couleur(s)</string>
+    <string name="bonne_place">%s bonnes(s) place(s)</string>
+
+    <string name="se_connecter">Se connecter</string>
+    <string name="indice_pseudo">Votre pseudonyme</string>
+
+    <string name="message_accueil">Bienvenue dans le jeu du Maître de l\'Esprit !</string>
+    <string name="sous_message_accueil">Tu peux aller voir les statistiques globales du jeu ou bien commencer à jouer.\n\nPour jouer, entre un pseudonyme !</string>
+
+    <string name="ligne_incomplete_msg">Veuillez remplir la totalité de la ligne.</string>
+    <string name="ligne_invalide_msg">Veuillez ne pas mettre deux fois la même couleur sur une même ligne.</string>
+    <string name="gagne_msg">Vous avez gagné(e) !!!</string>
+    <string name="perdu_msg">Vous avez perdu booouuuuh !!!</string>
+    <string name="valider_jeu">Valider</string>
+    <string name="rejouer_partie">Rejouer</string>
+
+    <string name="titre_sortie">Quitter le jeu actuel ?</string>
+    <string name="message_sortie">Êtes-vous sûr de vouloir quitter votre partie ?</string>
+    <string name="oui">Oui</string>
+    <string name="non">Non</string>
+
+    <string name="jouer_partie">Jouer</string>
+    <string name="statistiques">Statistiques</string>
+    <string name="gagne">"Partie(s) gagnée(s) : "</string>
+    <string name="trait">" - "</string>
+    <string name="perdu">"Partie(s) perdue(s) : "</string>
+    <string name="ratio">"Ratio : "</string>
+
+    <string name="valentin_huard">Valentin HUARD</string>
+    <string name="texte_valentin_huard">Développeur web en formation chez MDS Toulouse. Jouer à notre mastermind et n\'hésitez pas à nous donner notre avis 😜</string>
+    <string name="texte_maud_lefort">Coucou ! 👻 Développeuse Web &amp; Mobile en alternance à Toulouse, n\'hésite pas à jouer, voir les stats de tes amis et les tiennes, ainsi que donner ton avis !!! 😎</string>
+    <string name="maud_lefort">Maud LEFORT</string>
+
+    <string name="copyright_image">Illustrations par Kit8 - Dribbble</string>
+
+    <string name="jouer_texte">Tu souhaites jouer à un jeu trop méga génial qui demande de la réflexion, de la chance et beaucoup de skills ? Alors joue toute suite à notre Mastermind !!!</string>
+    <string name="jouer_statistiques">Tu souhaites te comparer avec les meilleurs ou juste être curieux de ton ratio de victoires ? Va vite sur tes statistiques et tu verras la vie en rose !!!</string>
+    <string name="connecter">Connecté en tant que ...</string>
+</resources>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.jeu.JeuFragment">
+
+    <TextView
+        android:id="@+id/pseudo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:ems="15"
+        android:gravity="center"
+        android:minHeight="48dp"
+        android:text=""
+        android:textSize="14sp" />
+
+    <TableLayout
+        android:id="@+id/tableau_jeu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pseudo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="8dp" />
+
+    <RelativeLayout
+        android:id="@+id/boutons"
+        android:layout_below="@+id/tableau_jeu"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/bouton_rejouer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:enabled="false"
+            android:text="@string/rejouer_partie" />
+
+        <Button
+            android:id="@+id/bouton_valider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_toRightOf="@id/bouton_rejouer"
+            android:text="@string/valider_jeu" />
+    </RelativeLayout>
+
+</RelativeLayout>

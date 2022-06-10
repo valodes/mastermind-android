@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "83916893953",
+    "firebase_url": "https://mastermind-4f328-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "mastermind-4f328",
+    "storage_bucket": "mastermind-4f328.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:83916893953:android:ef05628cc785424ebff500",
+        "android_client_info": {
+          "package_name": "com.maitredelesprit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "83916893953-npq6kicbm5478f5rgppbtcs8f67jd3ts.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDaTpNfdJdao-II6_Aj6uvcjCkG2CIFlec"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "83916893953-npq6kicbm5478f5rgppbtcs8f67jd3ts.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.jeu.StatsOuJouerFragment">
+
+    <RelativeLayout
+        android:id="@+id/layout_pseudo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/pseudo_text"
+            android:textAllCaps="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/connecter"
+            android:textSize="16sp"
+            android:textAppearance="?attr/textAppearanceTitleMedium"
+            />
+
+        <TextView
+            android:id="@+id/pseudo"
+            android:textAllCaps="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pseudo"
+            android:layout_alignParentRight="true"
+            android:textSize="16sp"
+            android:textAppearance="?attr/textAppearanceTitleMedium"
+            />
+    </RelativeLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/carte_jouer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_below="@+id/layout_pseudo"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                app:srcCompat="@drawable/image_jouer"
+                android:scaleType="centerCrop" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/jouer"
+                    android:textAllCaps="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/jouer_partie"
+                    android:textSize="14sp"
+                    android:textAppearance="?attr/textAppearanceTitleMedium"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/jouer_texte"
+                    android:text="@string/jouer_texte"
+                    android:layout_marginTop="8dp"
+                    android:textSize="12sp"
+                    android:textAppearance="?attr/textAppearanceBodyMedium"
+                    android:textColor="?android:attr/textColorSecondary"
+                    />
+
+                <Button
+                    android:id="@+id/bouton_jouer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="@string/jouer_partie"
+                    android:backgroundTint="@color/md_theme_secondaryContainer"
+                    android:textColor="@color/md_theme_onSecondaryContainer"
+                    android:textSize="12sp"
+                    android:textAllCaps="true"
+                    style="@style/Widget.Material3.Button.ElevatedButton"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/carte_statistiques"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_below="@+id/carte_jouer">
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                app:srcCompat="@drawable/image_statistiques"
+                android:scaleType="centerCrop" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/statistiques"
+                    android:textAllCaps="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/statistiques"
+                    android:textSize="14sp"
+                    android:textAppearance="?attr/textAppearanceTitleMedium"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/jouer_statistiques"
+                    android:text="@string/jouer_statistiques"
+                    android:layout_marginTop="8dp"
+                    android:textSize="12sp"
+                    android:textAppearance="?attr/textAppearanceBodyMedium"
+                    android:textColor="?android:attr/textColorSecondary"
+                    />
+
+                <Button
+                    android:id="@+id/bouton_statistiques"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/statistiques"
+                    android:textSize="12sp"
+                    android:layout_gravity="right"
+                    android:textAllCaps="true"
+                    android:backgroundTint="@color/md_theme_secondaryContainer"
+                    android:textColor="@color/md_theme_onSecondaryContainer"
+                    style="@style/Widget.Material3.Button.ElevatedButton"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/texte_copyright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/copyright_image"
+        android:textAppearance="?attr/textAppearanceCaption"
+        android:textColor="@color/md_theme_onSurface"
+        />
+
+</RelativeLayout>
