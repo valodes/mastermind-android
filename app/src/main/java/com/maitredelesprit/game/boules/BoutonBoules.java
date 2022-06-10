@@ -11,6 +11,7 @@ import com.maitredelesprit.R;
 /**
  * Classe permettant de créer un bouton de type couleur.
  *
+ * @version 1.0
  * @author Valentin HUARD et Maud LEFORT
  */
 public class BoutonBoules extends AppCompatButton {
@@ -20,8 +21,6 @@ public class BoutonBoules extends AppCompatButton {
      *
      * @param context Le contexte de l'application. (non-null)
      *
-     * @version 1.0
-     * @author Valentin HUARD et Maud LEFORT
      */
     public BoutonBoules(Context context) {
         super(context);
@@ -32,16 +31,18 @@ public class BoutonBoules extends AppCompatButton {
      *
      * @param context Le contexte de l'application. (non-null)
      * @param color La couleur du bouton. (non-null)
-     *
-     *
-     * @version 1.0
-     * @author Valentin HUARD et Maud LEFORT
      */
     public BoutonBoules(Context context, int color) {
         super(context);
         setGradientColor(color);
     }
 
+    /**
+     * Créer un dégradé de couleur pour le bouton.
+     *
+     * @param color La couleur du bouton. (non-null)
+     *
+     */
     public void setGradientColor(int color) {
         GradientDrawable gradient = new GradientDrawable();
         gradient.setCornerRadius(999f);
@@ -55,8 +56,6 @@ public class BoutonBoules extends AppCompatButton {
      * @see #onAttachedToWindow()
      * @see #setElevation(float)
      *
-     * @version 1.0
-     * @author Valentin HUARD et Maud LEFORT
      */
     public void onAttachedToWindow() {
         super.onAttachedToWindow();

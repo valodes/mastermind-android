@@ -22,13 +22,19 @@ import com.maitredelesprit.R;
 import com.maitredelesprit.database.Stats;
 import com.maitredelesprit.databinding.FragmentStatsOuJouerBinding;
 
+/**
+ * Fragment pour le choix entre stats ou jouer
+ *
+ * @version 1.0
+ * @author Valentin HUARD et Maud LEFORT
+ */
 public class StatsOuJouerFragment extends Fragment {
 
-    private FragmentStatsOuJouerBinding binding;
+    private FragmentStatsOuJouerBinding binding; // Binding de la vue du fragment (fragment_stats_ou_jouer.xml)
 
-    private FirebaseDatabase db; // Déclaration de la base de données Firebase
+    private FirebaseDatabase db; // Déclaration de la base de données Firebase (FirebaseDatabase)
 
-    private static String key = null, pseudo = null; // Pour ajouter un nouveau joueur à la base de données
+    private static String key = null, pseudo = null; // Pour ajouter un nouveau joueur à la base de données Firebase
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
